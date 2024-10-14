@@ -1,0 +1,51 @@
+<h1>Form Elements</h1>
+
+<form action='' method='post'>
+	<div>
+		<p>SELECT</p>
+		<select name='test'>
+			<option value='UA'>Украина</option>
+			<option value='SP'>Испания</option>
+			<option value='USA'>Америка</option>
+		</select>
+	</div>
+
+	<div>
+		<p>CHECKBOX</p>
+		<label for='check1'>First checkbox</label>
+		<input type='checkbox' name='check1' id='check1' value='First active' />
+		<label for='check1'>Second checkbox</label>
+		<input type='checkbox' name='check2' id='check2' value='Second active' />
+	</div>
+
+	<div>
+		<p>RADIO</p>
+		<label for='radio1'>1 radio</label>
+		<input type='radio' name='radio' id='radio1' value=' radio1' />
+		<label for='radio2'>2 radio</label>
+		<input type='radio' name='radio' id='radio2' value=' radio2' />
+		<label for='radio3'>3 radio</label>
+		<input type='radio' name='radio' id='radio3' value=' radio3' />
+	</div>
+
+	<div>
+		<p>INPUT</p>
+		<input type='text' name='text' />
+	</div>
+
+	<div>
+		<p>TEXTAREA</p>
+		<textarea name='textarea'></textarea>
+	</div>
+	<div>
+		<p>SUBMIT</p>
+		<input type='submit' name='submit' />
+	</div>
+</form>
+
+<h2>Select element: {{body.test}}</h2>
+<h2>First checkbox: {{body.check1}}</h2>
+<h2>Second checkbox: {{body.check2}}</h2>
+<h2>Selected Radio: {{body.radio}}</h2>
+<h2>Input text: {{body.text}}</h2>
+<h2>Textarea: {{body.textarea}}</h2>
